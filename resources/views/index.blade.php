@@ -20,5 +20,8 @@
            </div>
            @endforeach
        </div>
+       <dic class='pagination'>
+           {{ $posts -> links() }}
+       </dic>
     </body>
 </html>
