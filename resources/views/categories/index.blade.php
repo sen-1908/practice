@@ -18,7 +18,7 @@
            <div class = "post">
                <h2 class = "title1"><a href="/posts/{{ $post ->id}}">{{$post -> title}}</a></h2>
                <p class = "body">{{ $post -> body}}</p>
-               <a href ="/categories/{{ $post->category ->id }}"> {{ $post->category->name }} </a>
+               <a href =""> {{ $post->category->name }} </a>
                <form onsubmit ="return check()" action="/posts/{{$post->id}}" id="form_{{$post->id}}" method="POST" >
                    @csrf
                    @method('DELETE')
